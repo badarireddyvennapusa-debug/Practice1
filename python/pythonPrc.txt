@@ -1,0 +1,22 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+try:
+    for value in iter(input,""):
+        try:
+            value = input()
+            list1 = value.split(" ")
+        except EOFError:
+            break
+            a = int(list1[0])
+            b = 0
+            if len(list1) > 1:
+                b = int(list1[1])
+            try:
+                count = a/b
+                print (count)
+            except ZeroDivisionError as e:
+                print ("Error Code:", "integer division or modulo by zero")
+except IndexError as e:
+    print ("Error Code:", e)
+except ValueError as e:
+    print ("Error Code:", e)
+    
