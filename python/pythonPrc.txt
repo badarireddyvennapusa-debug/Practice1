@@ -14,7 +14,7 @@ try:
                 count = a/b
                 print (count)
             except ZeroDivisionError as e:
-                print ("Error Code:", "integer division or modulo by zero")
+                print ("Error Code:", "integer division or modulo by zero is not valid")
 except IndexError as e:
     print ("Error Code:", e)
 except ValueError as e:
